@@ -123,13 +123,13 @@ nav {
 
 .personal_logo {
   font-size: 24px;
-  color: #6030b1;
+  color: #ff2400;
   margin: 0 12px;
   font-weight: bold;
 }
 
-.text--purple {
-  color: purple;
+.text--scarlet {
+  color: #ff2400;
 }
 
 /* 
