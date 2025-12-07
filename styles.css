@@ -316,10 +316,9 @@ opacity: 0.7;
   
 }
 
-.project__description--link {
-  color: #fff;
+.project__description--links {
   font-size: 20px;
-  margin-right: 16px;
+  margin-right: 18px;
   text-decoration: none;
 }
 
@@ -417,5 +416,15 @@ footer {
 /* Small Phones*/ 
 
 @media (max-width: 480px) {
-  
+  .nav__link:not(:last-child){
+    display: none;
+  }
+
+  .project__description--para {
+    display: none;
+  }
+   .project__description--link {
+    display: flex;
+    justify-content: center;
+   }
 } 
