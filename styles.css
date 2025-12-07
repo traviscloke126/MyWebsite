@@ -164,6 +164,19 @@ ABOUT ME
   overflow: hidden;
   box-shadow: 0 8px 16px;
   margin-bottom: 28px;
+  animation: animate-profile-picture 400ms 400ms backwards;
+}
+
+@keyframes animate-profile-picture {
+  0% {
+    transform: scale(0);
+  }
+  80% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .about-me__picture {
@@ -176,10 +189,13 @@ ABOUT ME
 
 .about-me__info--title {
   margin-bottom: 16px;
+  animation: fade-up;
+  animation: fade-up 600ms 600ms backwards;
 }
 .about-me__info--para {
   font-size: 20px;
   margin-bottom: 28px;
+  animation: fade-up 800ms 800ms backwards;
 }
 
 .about-me__link {
@@ -187,6 +203,18 @@ ABOUT ME
   color: black;
   padding: 0 16px;
 }
+
+@keyframes fade-up {
+ 0% {
+  opacity: 0;
+  transform: translateY(40px);
+}
+100% {
+  opacity: 1;
+  transform: translateY(0);
+}
+}
+
 
 .about-me__img--container {
   flex: 1;
@@ -420,11 +448,27 @@ footer {
     display: none;
   }
 
+  .project__descripton {
+    padding: 0;
+    left: 0;
+    width: 100%;
+  }
+
   .project__description--para {
     display: none;
   }
-   .project__description--link {
+ .project__description--link {
     display: flex;
     justify-content: center;
+  }
+
+  .project__description--title{
+    text-align: center;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+  .project__description--sub-title {
+    text-align: center;
+    margin: 12px 0;
    }
 } 
